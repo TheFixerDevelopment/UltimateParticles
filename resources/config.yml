@@ -1,5 +1,3 @@
-# UltimateParticles Config File
-
 ####### BASIC PREFERENCES #######
 
 # Supported language(s): en
@@ -8,9 +6,3 @@ default-lang: en
 default-shape: trail
 # Supported effect type(s): particle
 default-type: particle
-
-#######  DANGEROUS  #######
-
-# Version
-# DO NOT MODIFY THIS!
-v: "Pre-alpha0.1"

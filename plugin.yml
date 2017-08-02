@@ -1,22 +1,30 @@
 name: UltimateParticles
 main: hoyinm14mc\ultimateparticles\UltimateParticles
-api: ["2.0.0", "3.0.0-ALPHA3", "3.0.0-ALPHA4"]
-version: Pre-alpha0.1
-author: hoyinm14mc
-
-commands:
-  ultimateparticles:
-    usage: /ultimateparticles help
-    description: Main command of UltimateParticles for effects manupulation
-    aliases: ["ultip"]
-
+version: Pre-alpha0.2
+api:
+ - 3.0.0
+ - 3.0.0-ALPHA7
+authors:
+ - "hoyinm14mc"
+ - "jasonwynn10"
+description: "Particle trail plugin for PocketMine-MP mcpe server software"
+load: STARTUP
 permissions:
-  ultimateparticles.command.ultimateparticles.addparticle:
+  ultimateparticles:
     default: op
-    description: Permits players to add particle to their effects
-  ultimateparticles.command.ultimateparticles.removeparticle:
-    default: op
-    description: Permits players to remove particle from their effects
-  ultimateparticles.command.ultimateparticles.getparticles:
-    default: true
-    description: Permits players to get a list of particles of their effect
+    children:
+      ultimateparticles.command:
+        default: op
+        children:
+          ultimateparticles.command.ultimateparticles:
+            default: op
+            children:
+              ultimateparticles.command.ultimateparticles.addparticle:
+                default: op
+                description: "Permits players to add particle to their effects"
+              ultimateparticles.command.ultimateparticles.removeparticle:
+                default: op
+                description: "Permits players to remove particle from their effects"
+              ultimateparticles.command.ultimateparticles.getparticles:
+                default: true
+                description: "Permits players to get a list of particles of their effect"
