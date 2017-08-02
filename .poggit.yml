@@ -2,4 +2,5 @@
 projects:
   UltimateParticles:
     path: ""
+    icon: icon.jpg
 ...
