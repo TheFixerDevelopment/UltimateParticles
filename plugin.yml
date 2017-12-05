@@ -1,12 +1,10 @@
 name: UltimateParticles
 main: hoyinm14mc\ultimateparticles\UltimateParticles
-version: Pre-alpha0.2
+version: Pre-alpha1.0
 api:
- - 3.0.0
+ - 3.0.0-ALPHA9
  - 3.0.0-ALPHA7
-authors:
- - "hoyinm14mc"
- - "jasonwynn10"
+author: [hoyinm14mc updated by VMPE Development Team]
 description: "Particle trail plugin for PocketMine-MP mcpe server software"
 load: STARTUP
 permissions:
