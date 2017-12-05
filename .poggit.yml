@@ -1,0 +1,7 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/TheFixerDevelopment/UltimateParticles-ALPHA9
+branches:
+- patch-1
+projects:
+  UltimateParticles-ALPHA9:
+    path: ""
+...
